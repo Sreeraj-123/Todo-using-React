@@ -6,9 +6,9 @@
     border:1px solid black;
     border-radius: 13px;
     padding:15px;
-    width:400px;
+    width:clamp(250px, 30%, 400px);
     margin:10px auto;
-    font-size: larger;
+    font-size: clamp(16px, 2vw, 20px);
 }
 .todo-checkbox{
     accent-color: rgb(86, 86, 86);
