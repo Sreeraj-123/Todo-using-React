@@ -1,0 +1,31 @@
+.todo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    border:1px solid black;
+    border-radius: 13px;
+    padding:15px;
+    width:400px;
+    margin:10px auto;
+    font-size: larger;
+}
+.todo-checkbox{
+    accent-color: rgb(86, 86, 86);
+    width:15px;
+    height:15px;
+    cursor: pointer;
+}
+.todo-close{
+    cursor: pointer;
+    font-size: larger;
+    user-select: none;
+}
+.todo-message{
+    text-decoration: none;
+    color:black;
+}
+.todo-completed-message{
+    text-decoration: line-through;
+    color:gray;
+}
