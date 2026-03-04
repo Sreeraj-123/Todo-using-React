@@ -6,6 +6,11 @@ function Input(){
     const [nodeInput,setNodeInput]=useState("");
     const [todos,setTodos]=useState([]);
     
+    const handleKeyDown=(e)=>{
+        if(e.key==="Enter"){
+            handleAdd();
+        }
+    }
 
     const handleAdd=()=>{
         if(nodeInput.trim()==="")return;
@@ -37,6 +42,7 @@ function Input(){
                     value={nodeInput}
                     onChange={(e)=>setNodeInput(e.target.value)}
                     placeholder="Add a new task..."
+                    onKeyDown={handleKeyDown}
                 />
                 <button className="input-button" onClick={handleAdd}>Add</button>
             </div>
